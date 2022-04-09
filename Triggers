@@ -536,10 +536,15 @@ Server Methods:
 FiveCity:
 -TriggerServerEvent('lester:vendita')
 ----------------------------------------------------------------------------------------
+EscobarCity:
+Anticheat: Carpack2 (Mixas)
+Anticheat2: harleybmwm8 (DeltaX) 
+----------------------------------------------------------------------------------------
 SunsideRP:
 -TriggerServerEvent("esx_yacht:reward")
 ----------------------------------------------------------------------------------------
 DemonV:
+Anticheat: demonv_gangwars (Chocohax)
 -TriggerServerEvent('lester:vendita')
 -TriggerServerEvent('esx_dmvschool:pay', 999999999999999999)
 ----------------------------------------------------------------------------------------
