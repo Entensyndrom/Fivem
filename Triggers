@@ -575,7 +575,7 @@ Jumscare:
 Server Methods:
 ----------------------------------------------------------------------------------------
 SmokeV:
-Ei_Farm (API-Anticheat)
+Anticheat: Ei_Farm (API-Anticheat)
 ----------------------------------------------------------------------------------------
 FiveCity:
 -TriggerServerEvent('lester:vendita')
