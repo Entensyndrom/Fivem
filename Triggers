@@ -28,7 +28,9 @@ Money:
 -TriggerServerEvent('route68_blackjack:givemoney', count, 2)
 -TriggerServerEvent("bankrobberies:receiveCash")
 ----------------------------------------------------------------------------------------
-Führerschein (Praxis & Theorie) & Waffenlizent:
+Führerschein (Praxis & Theorie) & Waffenlizenz:
+-TriggerServerEvent('esx_dmvschool:addLicense', 'drive_truck')
+-TriggerServerEvent('esx_dmvschool:addLicense', 'drive_bike')
 -TriggerServerEvent('esx_dmvschool:addLicense', 'drive')
 -TriggerServerEvent('esx_dmvschool:addLicense', 'dmv ')
 -TriggerServerEvent('esx_weashop:buyLicense', 0)
@@ -36,7 +38,8 @@ Führerschein (Praxis & Theorie) & Waffenlizent:
 Revive/ReviveID:
 -TriggerEvent('esx_ambulancejob:revive')
 -TriggerEvent("esx_ambulancejob:reSelinYannikTSonnysVatervive")
--TriggerServerEvent('esx_ambulancejob:revive', 12)
+-TriggerEvent("esxambulancejob:revive")
+-TriggerServerEvent('esx_ambulancejob:revive', ID
 --------------------------------------------------------------------------------------
 Drogen:
 -Harvesting:
@@ -72,6 +75,41 @@ TriggerServerEvent('esx_drugs:stopSellOpium')
 Alle Fesseln:
 -TriggerEvent('esx_policejob:handcuff', -1)
 -TriggerEvent('esx_lcnjob:handcuff', -1)
+-TriggerServerEvent('esx_gangjob',-1)
+-TriggerServerEvent('esx_playermenu:handcuff',(ID))
+---------------------------------------------------------------------------------------
+Entfesseln:
+-TriggerServerEvent('esx_policejob:handcuffuncuff',-1)
+-TriggerServerEvent('esx_playermenu:unhandcuff', (ID))
+---------------------------------------------------------------------------------------
+Waffen geben:
+-TriggerServerEvent('esx_weashop:buyItem', "WEAPON_MACHETE", -500000, "BlackWeashop")
+-TriggerServerEvent('esx_policejob:giveWeapon', WEAPON_CARBINERIFLE,  1000)
+
+GTA Link für alle Waffen (für die namen)
+https://wiki.rage.mp/index.php?title=Weapons
+---------------------------------------------------------------------------------------
+Boss Menus:
+Opens bossmenu Police
+-TriggerEvent('esx_society:openBossMenu', 'police', function(data,menu) menu.close() end)
+ 
+Opens bossmenu for EMS
+-TriggerEvent('esx_society:openBossMenu', 'ambulance', function(data,menu) menu.close() end)
+ 
+Opens bossmenu for Mechanics
+-TriggerEvent('esx_society:openBossMenu', 'mechano', function(data,menu) menu.close() end)
+ 
+Opens bossmenu for Car Dealer
+-TriggerEvent('esx_society:openBossMenu', 'cardealer', function(data, menu) menu.close() end)
+ 
+Opens bossmenu for BankerJob
+-TriggerEvent('esx_society:openBossMenu', 'banker', function (data, menu) menu.close() end)
+ 
+Opens bossmenu for Realestateagent
+-TriggerEvent('esx_society:openBossMenu', 'realestateagent', function(data, menu) menu.close() end)
+---------------------------------------------------------------------------------------
+Job geben:
+-TriggerServerEvent('NB:recruterplayer', id, "police", 4)
 ---------------------------------------------------------------------------------------
 Alle Einknasten:
 Citizen.CreateThread(function()
@@ -113,6 +151,9 @@ Open JailMenu:
 ----------------------------------------------------------------------------------------
 Autos verkaufen:
 -TriggerServerEvent("GoFast:VenteDuVehicule", 100000)
+----------------------------------------------------------------------------------------
+Westen geben:
+-TriggerServerEvent('lox_policejob:giveweste')
 ----------------------------------------------------------------------------------------
 Lester:
 -TriggerServerEvent('esx_vangelico_robbery:gioielli') 
