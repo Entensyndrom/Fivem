@@ -574,6 +574,12 @@ Jumscare:
 ----------------------------------------------------------------------------------------
 Server Methods:
 ----------------------------------------------------------------------------------------
+NewHistory:
+Anticheat: NewhistoryRP_checker (API-Anitcheat)
+Anticheat2: NewHistoryRP_allowlist (Mixas)
+Anticheat3: NewHistoryRP_Vision (Fake DeltaX)
+Anitcheat4: NewHistoryRP_Register (Blacklist)
+----------------------------------------------------------------------------------------
 Nolight:
 Anticheat: ImoShield (ImoShield)
 -TriggerServerEvent('esx_dmvschool:pay', 999999999999999999)
