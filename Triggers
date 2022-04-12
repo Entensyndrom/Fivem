@@ -575,7 +575,7 @@ Jumscare:
 Server Methods:
 ----------------------------------------------------------------------------------------
 Nolight:
-Anticheat: delta (Fake DeltaX)
+Anticheat: ImoShield (ImoShield)
 -TriggerServerEvent('esx_dmvschool:pay', 999999999999999999)
 -TriggerServerEvent('esx_truckerjob:pay', 2400000)
 ----------------------------------------------------------------------------------------
