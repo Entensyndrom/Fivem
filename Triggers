@@ -587,6 +587,7 @@ Danach rejoin Server
 ----------------------------------------------------------------------------------------
 SmokeV:
 Anticheat: Ei_Farm (API-Anticheat)
+Anitcheat2: Kurtis_Benz (Mixas)  <--------- Als erstes Deaktivieren
 ----------------------------------------------------------------------------------------
 FiveCity:
 -TriggerServerEvent('lester:vendita')
