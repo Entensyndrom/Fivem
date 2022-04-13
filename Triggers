@@ -577,6 +577,7 @@ Server Methods:
 ----------------------------------------------------------------------------------------
 EvolutionV:
 Anticheat: esx_blitzer (Fake DeltaX)
+-TriggerServerEvent('esx_dmvschool:pay', 999999999999999999)
 ----------------------------------------------------------------------------------------
 PlutoV:
 Anticheat: Pluto_pncy (MIXAS)
