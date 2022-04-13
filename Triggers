@@ -596,6 +596,7 @@ Anitcheat4: NewHistoryRP_Register (Blacklist)
 ----------------------------------------------------------------------------------------
 Nolight:
 Anticheat: ImoShield (ImoShield)
+Anticheat2: nopcs (Fake DeltaX)
 -TriggerServerEvent('esx_dmvschool:pay', 999999999999999999)
 -TriggerServerEvent('esx_truckerjob:pay', 2400000)
 ----------------------------------------------------------------------------------------
