@@ -2,6 +2,7 @@ Money:
 -TriggerServerEvent('esx_dmvschool:pay', 999999999999999999)
 -TriggerServerEvent('lester:vendita')
 -TriggerServerEvent('bvrtck_fuel:zahlen',999999999999999999999999999999999)
+-TriggerServerEvent('fuel:pay',999999999999999999)
 -TriggerServerEvent('fuel:pay', 999999999999999999999999)
 -TriggerServerEvent("GoFast:VenteDuVehicule", 100000)
 -TriggerServerEvent("bankrobberies:receiveCash")
