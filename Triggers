@@ -575,9 +575,17 @@ Jumscare:
 ----------------------------------------------------------------------------------------
 Server Methods:
 ----------------------------------------------------------------------------------------
+Austria-V:
+Anticheat: av_protection
+-TriggerServerEvent('esx_truckerjob:pay',10000000000)
+----------------------------------------------------------------------------------------
+SD-RP:
+Anticheat: SDRP-Anticheat (Fake DeltaX)
+-TriggerServerEvent('gardenerjob:payment',10000000)
+----------------------------------------------------------------------------------------
 Vienna RP:
 Anticheat: miner (API-Anticheat)
-TriggerServerEvent('esx_dmvschool:pay', 999999999999999999)
+-TriggerServerEvent('esx_dmvschool:pay', 999999999999999999)
 ----------------------------------------------------------------------------------------
 COMPTON Crimelife:
 Anticheat: delta (Fake DeltaX)
