@@ -575,6 +575,13 @@ Jumscare:
 ----------------------------------------------------------------------------------------
 Server Methods:
 ----------------------------------------------------------------------------------------
+Zoomlife:
+Anticheat: delta (DeltaX)
+Anticheat2: esx_anker (API-Anticheat)
+----------------------------------------------------------------------------------------
+BrightlifeRP:
+Anticheat: Somba (Somba-Anticheat)
+----------------------------------------------------------------------------------------
 DineroCity:
 Anticheat: hex_anti (Hex-Anticheat)
 Anticheat2: dc_dineropapimenu (MIXAS)
