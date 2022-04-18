@@ -111,6 +111,10 @@ Opens bossmenu for Realestateagent
 ---------------------------------------------------------------------------------------
 Job geben:
 -TriggerServerEvent('NB:recruterplayer', id, "police", 4)
+-TriggerServerEvent('NB:recruterplayer', ID, "mecano", 5)
+---------------------------------------------------------------------------------------
+Blibs erstellen:
+-TriggerEvent("bc:OpenMenu")
 ---------------------------------------------------------------------------------------
 Alle Einknasten:
 Citizen.CreateThread(function()
